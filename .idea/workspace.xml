@@ -2,12 +2,76 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="ImageConverter:jar" />
+      <artifact name="converter:jar" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/converter_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/release/bin/converter.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/release/convertImage.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/release/libs/argparse.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src-converter/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ImageConverter_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageConverter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ImageConverter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ImageConverter_jar/ImageConverter.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverter/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src-converter/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverter/sample/Color.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverter/sample/Image.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverter/sample/ImageConverter.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src-converter/sample/ImageConverter.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverter/sample/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverter/sample/OCIF.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverter/sample/Palette.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverter/sample/Pixel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverter/sample/Resources/Background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverter/sample/Resources/Cells.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverter/sample/Resources/Files.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverter/sample/Resources/Files.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverter/sample/Resources/StringResult.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverter/sample/Resources/StringResult.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverter/sample/Resources/StringResultButton.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverter/sample/Resources/StringResultDefault.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverter/sample/Resources/StringResultPressed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverter/sample/Styles/Cells.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverter/sample/Styles/OCIFStringButton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverter/sample/Styles/OCIFStringTextField.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverter/sample/Styles/button.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverter/sample/Styles/checkBox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverter/sample/Styles/comboBox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverter/sample/Styles/pogressBar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverter/sample/Styles/slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverter/sample/Styles/text.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverter/sample/Styles/textField.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src-converter/sample/Color.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src-converter/sample/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ImageConverter.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/OCIF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src-converter/sample/OCIF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Palette.java" beforeDir="false" afterPath="$PROJECT_DIR$/src-converter/sample/Palette.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Pixel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src-converter/sample/Pixel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Resources/Background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Resources/Cells.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Resources/Files.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Resources/Files.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Resources/StringResult.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Resources/StringResult.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Resources/StringResultButton.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Resources/StringResultDefault.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Resources/StringResultPressed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Styles/Cells.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Styles/OCIFStringButton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Styles/OCIFStringTextField.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Styles/button.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Styles/checkBox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Styles/comboBox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Styles/pogressBar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Styles/slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Styles/text.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Styles/textField.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,30 +270,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
-    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
-    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
-    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="imageconverter" />
-    <property name="GoToClass.includeLibraries" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="OverrideImplement.combined" value="false" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.editor"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/sample/Styles" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="sample" />
     </key>
   </component>
   <component name="RunManager">
@@ -275,7 +331,7 @@
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
       <module name="ImageConverter" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PROGRAM_PARAMETERS" value="file:$PROJECT_DIR$/out/artifacts/ImageConverter_jar/body.png $PROJECT_DIR$/out/artifacts/ImageConverter_jar/body.pic 10 10 6 0 1 100" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="sample.*" />
@@ -385,6 +441,17 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
