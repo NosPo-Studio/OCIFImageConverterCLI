@@ -1,19 +1,9 @@
 package.path = package.path .. ";libs/?.lua"
 
 local lfs = require("lfs")
-local ut = require("UT")
 local argparse = require("argparse")
 
-local imagePath
-local convertedImagePath
-local resX, resY
-local ocifVersion
-local convertAsBraille
-local enableDithering
-local opacity
-
 local args, options
-
 
 do --parse args
     local parser = argparse("Image converter", "A CLI tool to convert PNG and JPG images to OCFI images")
@@ -28,14 +18,11 @@ do --parse args
     parser:argument("opacity", " (0-100) Opacity value")
 
     parser:flag("-O --overwrite"):target("overwrite")
+    parser:flag("-w --no-warn", "Dont print warning messages."):target("noWarn")
     
 
     args, options = parser:parse()
 end
-
---print(ut.tostring(args))
-
---print("java -jar bin/converter.jar " .. args.input .. " " .. args.output .. " " .. args.resX .. " " .. args.resY .. " " .. args.OCIF .. " " .. args.brialle .. " " .. args.dithering .. " " .. args.opacity)
 
 if tonumber(args.OCIF) < 6 or tonumber(args.OCIF) > 8 then
     print("ERROR: OCIF version out of range.")
@@ -54,5 +41,18 @@ if tonumber(args.opacity) < 0 or tonumber(args.opacity) > 100 then
     os.exit(13)
 end
 
+if not lfs.attributes(args.input) then
+    print("ERROR: Can not find input file")
+    os.exit(1)
+end
 
-os.exit(os.execute("java -jar bin/converter.jar " .. args.input .. " " .. args.output .. " " .. args.resX .. " " .. args.resY .. " " .. args.OCIF .. " " .. args.brialle .. " " .. args.dithering .. " " .. args.opacity))
+if lfs.attributes(args.output) and args.overwrite then
+    if not args.noWarn then
+        print("WARN: Overweite file '" .. args.output .. "'")
+    end
+elseif lfs.attributes(args.output) then
+    print("ERROR: Output file already exists. Use -O to overwrite.")
+    os.exit(2)
+end
+
+os.exit(select(3, os.execute("java -jar bin/converter.jar " .. args.input .. " " .. args.output .. " " .. args.resX .. " " .. args.resY .. " " .. args.OCIF .. " " .. args.brialle .. " " .. args.dithering .. " " .. args.opacity)))
