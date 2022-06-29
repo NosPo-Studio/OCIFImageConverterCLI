@@ -5,6 +5,14 @@ This software is designed to convert any real images into OCIF images. The forma
 This fork is made to convert whole folders at once keeping the original resolution. To get a smooth work flow using OCIF images in bigger projects.  
 But it can be used to convert single files with manual given resolution as well.
 
+# Uage
+`lua convertDir.lua INPUT_DIR OUTPUT_DIR OCFI_VERSION USE_BRIALLE USE_DITHERING OPACITY`
+
+Example:  
+`lua convertDir.lua INPUT_DIR OUTPUT_DIR 8 0 1 100`
+
+you can call `lua convertDir.lua -h` or `lua convertImage.lua -h` in terminal to get more information about avaiable options.
+
 # Requirements
 ### Image converter
 For the imageConverter CLI frontend you need the following:  
