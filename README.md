@@ -5,7 +5,7 @@ This software is designed to convert any real images into OCIF images. The forma
 This fork is made to convert whole folders at once keeping the original resolution. To get a smooth work flow using OCIF images in bigger projects.  
 But it can be used to convert single files with manual given resolution as well.
 
-# Uage
+# Usage
 `lua convertDir.lua INPUT_DIR OUTPUT_DIR OCFI_VERSION USE_BRIALLE USE_DITHERING OPACITY`
 
 Example:  
