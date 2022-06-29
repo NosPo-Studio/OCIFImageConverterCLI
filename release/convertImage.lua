@@ -11,7 +11,7 @@ do --parse args
     parser:argument("input", "Input file path")
     parser:argument("output", "Output file path")
     parser:argument("resX", "The output width resolution in OC pixels.")
-    parser:argument("resY", "The output height resolution in OC pixels devided by 2")
+    parser:argument("resY", "The output height resolution in OC pixels")
     parser:argument("OCIF", "(6-8) The OCIF version")
     parser:argument("brialle", "(0-1) If brialle is used to indirectly double up output resolution")
     parser:argument("dithering", " (0-1) If dithering is enabled")
@@ -55,4 +55,4 @@ elseif lfs.attributes(args.output) then
     os.exit(2)
 end
 
-os.exit(select(3, os.execute("java -jar bin/converter.jar " .. args.input .. " " .. args.output .. " " .. args.resX .. " " .. args.resY .. " " .. args.OCIF .. " " .. args.brialle .. " " .. args.dithering .. " " .. args.opacity)))
+os.exit(select(3, os.execute("java -jar bin/converter.jar " .. args.input .. " " .. args.output .. " " .. args.resX .. " " .. math.floor(args.resY / 2 + .5) .. " " .. args.OCIF .. " " .. args.brialle .. " " .. args.dithering .. " " .. args.opacity)))

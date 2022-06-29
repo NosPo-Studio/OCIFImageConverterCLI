@@ -38,7 +38,7 @@ local function convert(input, output)
     local inputPath, file, ending = ut.seperatePath(input)
     local outputFile = args.output .. string.sub(input, #args.input +1, -#ending) .. "pic"
     local suc
-    local execString = "lua convertImage.lua " .. input .. " " .. outputFile .. " "  .. resX .. " "  .. math.floor(resY / 2 + .5) .. " " .. args.OCIF .. " " .. args.brialle  .. " " .. args.dithering .. " " .. args.opacity
+    local execString = "lua convertImage.lua " .. input .. " " .. outputFile .. " "  .. resX .. " "  .. resY .. " " .. args.OCIF .. " " .. args.brialle  .. " " .. args.dithering .. " " .. args.opacity
 
     if args.verbose then
         print("Convert '" .. input .. "'")
