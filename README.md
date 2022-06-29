@@ -28,4 +28,4 @@ The scripts are tested on linux only but should work on other OSs as well.
 This fork is made for our personal usage in mind. Thats why there no proper documentary yet.  
 But I am willing to help get it running if someone actually want to use it. Just open a issue pls.
 
-Also I have no idea about java. So im using lua for the CLI frontend.  
+Also I have no idea about java. So im using lua for the frontend.  
