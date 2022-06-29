@@ -7,12 +7,12 @@ This software is designed to convert any real images into OCIF images. The forma
 This fork is made to convert whole folders at once keeping the original resolution. To get a smooth work flow using OCIF images in bigger projects.
 
 # Requirements
-Java8
-Lua 5.x
-LuaFileSystem (lsf)
+Java8  
+Lua 5.x  
+LuaFileSystem (lsf)  
 
 # Dev note
-This fork is made for our personal usage only. Thats why there is not polishing or a proper documentary yet.  
+This fork is made for our personal usage in mind. Thats why there is barely any polishing or a proper documentary yet.  
 But I am willing to help get it running if someone actually want to use it. Just open a issue pls.
 
 Also I have no idea about java. So im using lua for the most parts.
